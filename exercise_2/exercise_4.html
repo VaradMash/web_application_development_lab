@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 4</title>
+        <style>
+            table {
+                background-color: rgb(44, 44, 172);
+                color: yellow;
+                margin-left: 10px;
+            }
+            th,
+            td {
+                padding: 10px;
+                padding-left: 10px;
+            }
+
+            #submit {
+                background-color: green;
+                color: white;
+                border-color: rgb(255, 102, 0);
+            }
+            #cancel {
+                background-color: red;
+                color: white;
+                border-color: rgb(255, 102, 0);
+            }
+
+            button {
+                height: 35px;
+                width: 100px;
+            }
+        </style>
+    </head>
+    <body >
+
+        <form>
+            <table cellspacing=0>
+                <tr>
+                    <td colspan=2 style="background-color: rgb(255, 102, 0);">SignUp</td>
+                </tr>
+                <div style="background-color: rgb(44, 44, 172);">
+                    <tr>
+                        <td style="text-align: right; background-color: rgb(44, 44, 172);" >
+                            First Name
+                        </td>
+                        <td>
+                            <input type="text" name="fname" placeholder="Enter First Name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right; background-color: rgb(44, 44, 172);">
+                            Last Name
+                        </td>
+                        <td>
+                            <input type="text" name="lname" placeholder="Enter Last Name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right;">Date of Birth</td>
+                        <td>
+                            
+                            <select><option name="date">Date</option></select>
+                            <select><option name="month">Month</option></select>
+                            <select><option name="year">Year</option></select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right;">
+                            Gender
+                        </td>
+                        <td>
+                            <input type="radio" name="gender">Male</input>
+                            <input type="radio" name="gender">Female</input>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right;">
+                            Country
+                        </td>
+                        <td>
+                            <select>
+                                <option name="select">Select</option>
+                                <option name="india">India</option>
+                                <option name="usa">USA</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right;">E-mail</td>
+                        <td><input type="email" name="mail" placeholder="Enter email"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right;">Phone</td>
+                        <td><input type="number" name="contact" placeholder="Enter phone"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right;">Password</td>
+                        <td><input type="password" name="password"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right;">Confirm Password</td>
+                        <td><input type="password" name="cpassword"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right;"></td>
+                        <td><input type="checkbox">I agree to the terms of use.</td>
+                    </tr>
+                </div>
+                <tr>
+                    <td colspan=2 style="text-align: right; background-color: rgb(255, 102, 0);">
+                        <button id="submit" name="submit">Submit</button>
+                        <button id="cancel" name="cancel">Cancel</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

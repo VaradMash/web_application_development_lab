@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <title>Exercise 5</title>
+        <style>
+            #contact {
+                border: 5px solid black;
+                margin-left: 10px;
+                border-spacing: 5px;
+                background-color: rgb(255, 243, 154);
+            }
+    
+            th,td {
+                padding:10px;
+                padding-left: 10px;
+            }
+
+            table#signin td {
+                border: solid 1px black;
+            }
+
+            #signin {
+                border: 2px solid black;
+                margin-left: 10px;
+            }
+
+        </style>
+    </head>
+    <body>
+            <form>
+                <table id="contact">
+                    <tr>
+                        <td style="color: white; background-color: rgb(163, 32, 54); text-align: center; font-family: Comic Sans MS, Comic Sans, cursive; height: 60px;
+                        font-size: 30px;">Contact Us!</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="Name....." style="border: 1px; width: 400px; height: 40px;"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="email" placeholder="Email....." style="border: 1px; width: 400px; height: 40px;"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="Subject....." style="border: 1px; width: 400px; height: 40px;"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <textarea name="message" style="border: 1px; width: 400px; height: 100px;" placeholder="Message....."></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" name="submit" style="background-color: orange; width: 400px; height: 40px;" value="SEND MESSAGE">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <br>
+            <hr>
+            <form>
+                <table id="signin" cellspacing=0 style="border-color: black; background-color: rgb(255, 232, 226);">
+                    <tr>
+                        <td colspan = 2 style="font-size: 25px; text-align: center;">
+                            Sign In
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            E-mail address
+                        </td>
+                        <td>
+                            <input type="text" name=username>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Password
+                        </td>
+                        <td>
+                            <input type="password" name=password>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan=2 style="text-align: center;">
+                            <input type="button" value="Sign In">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+    </body>
+</html>
