@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+.section_header {
+    font-family: 'Quintessential', cursive;    
+}
+
+.content {
+    font-family: 'Quintessential', cursive;  
+    font-size: 20px;
+    margin-top: 2%;
+}
+
+.section {
+    margin-top: 3%;
+    padding: 2%;
+}
+
+#brand_logo {
+    padding: 2%;
+}
+
+#gallery_carousel {
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0px solid black;
+    border-radius: 25px;
+}
+

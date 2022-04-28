@@ -1,0 +1,18 @@
+#sidebar {
+    height: 100vh;
+}
+
+#stats_window {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+#page_header{
+    align-content: center;
+    align-self: center;
+}
