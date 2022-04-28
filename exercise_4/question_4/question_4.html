@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Question 4</title>
+        <script src="./script.js"></script>
+    </head>
+    <body>
+        <center>
+            <form style="width: 50%; margin: auto; border: 1px solid black; border-radius: 25px; margin-top: 2%;">
+                <br>
+                <table cellspacing="15">
+                    <tr>
+                        <input type="number" id="operand_1">
+                        <select name="operations" id="operator" onclick="calculate()"
+                        style="margin-left: 5%; margin-right: 5%;">
+                            <option value="1">+</option>
+                            <option value="2">-</option>
+                            <option value="3">X</option>
+                            <option value="4">/</option>
+                        </select>
+                        <input type="number" id="operand_2">
+                        <label for="result"> = </label>
+                        <p id="result"></p>
+                    </tr>
+                </table>
+                <br>
+            </form>
+        </center>
+    </body>
+</html>

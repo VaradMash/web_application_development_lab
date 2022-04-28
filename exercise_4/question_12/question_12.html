@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Question 12</title>
+        <script src="./script.js"></script>
+        <style>
+            table {
+                padding: 15px;
+                margin-top: 5%;
+                border: 1px solid black;
+                border-radius: 15px;                
+            }
+            button {
+                font-size: larger;
+                padding-left: 30px;
+                padding-right: 30px;
+                width: 100px;
+            }
+            #input_window {
+                border: 1px solid black;
+                padding: 5px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <center>
+            <table cellspacing="15">
+                <tr>
+                    <td colspan="5"><h1 id="input_window">0</h1></td>
+                </tr>
+                <tr>
+                    <td><button type="button" onclick="update(1)">1</button></td>
+                    <td><button type="button" onclick="update(2)">2</button></td>
+                    <td><button type="button" onclick="update(3)">3</button></td>
+                    <td><button type="button" onclick="update(10)">+</button></td>
+                    <td><button type="button">Del</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" onclick="update(4)">4</button></td>
+                    <td><button type="button" onclick="update(5)">5</button></td>
+                    <td><button type="button" onclick="update(6)">6</button></td>
+                    <td><button type="button" onclick="update(20)">-</button></td>
+                    <td><button type="button">x<sup>2</sup></button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" onclick="update(7)">7</button></td>
+                    <td><button type="button" onclick="update(8)">8</button></td>
+                    <td><button type="button" onclick="update(9)">9</button></td>
+                    <td><button type="button" onclick="update(30)">x</button></td>
+                    <td><button type="button">x<sup>3</sup></button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" onclick="clear()">Clear</button></td>
+                    <td><button type="button" onclick="update(0)">0</button></td>
+                    <td><button type="button">=</button></td>
+                    <td><button type="button" onclick="update(30)">/</button></td>
+                    <td><button type="button">Sqrt</button></td>
+                </tr>
+                
+                
+            </table>
+            <h1 id="result"></h1>
+            <link rel="text/JavaScript" href="./script.js">
+            
+        </center>
+    </body>
+</html>

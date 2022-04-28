@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>
+            Calculator
+        </title>
+        <script>
+            function box(btn) {
+                    document.getElementById("calc").value += btn.id;
+            }
+            function calculate(btn) {
+                var expr = document.getElementById("calc").value;
+                let ans = eval(expr);
+                document.getElementById("calc").value = ans;
+            }
+            function square(btn) {
+                var expr = document.getElementById("calc").value;
+                document.getElementById("calc").value = expr*expr;
+            }
+            function cube(btn) {
+                var expr = document.getElementById("calc").value;
+                document.getElementById("calc").value = expr*expr*expr;
+            }
+            function sqrt(btn) {
+                var expr = document.getElementById("calc").value;
+                document.getElementById("calc").value = Math.pow(expr,0.5);
+            }
+            function clear(btn) {
+                var ans1 = "";
+                document.getElementById("calc").value = ans1;
+            }
+        </script>
+        <style>
+            button {
+                height: 50px;
+                width: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <table style="height: 300px; width: 300px; margin-left: 600px; margin-top: 200px;">
+            <tr>
+                <td colspan = 5>
+                    <input type="text" id="calc" style="width: 290px; height: 50px;">
+                </td>
+            </tr>
+            <tr>
+                <td><button id="1" onclick="box(this)">1</button></td>
+                <td><button id="2" onclick="box(this)">2</button></td>
+                <td><button id="3" onclick="box(this)">3</button></td>
+                <td><button id="+" onclick="box(this)">+</button></td>
+                <td><button id="delete" onclick="box(this)">Del</button></td>
+            </tr>
+            <tr>
+                <td><button id="4" onclick="box(this)">4</button></td>
+                <td><button id="5" onclick="box(this)">5</button></td>
+                <td><button id="6" onclick="box(this)">6</button></td>
+                <td><button id="-" onclick="box(this)">-</button></td>
+                <td><button id="square" onclick="square(this)">x<sup>2</sup></button></td>
+            </tr>
+            <tr>
+                <td><button id="7" onclick="box(this)">7</button></td>
+                <td><button id="8" onclick="box(this)">8</button></td>
+                <td><button id="9" onclick="box(this)">9</button></td>
+                <td><button id="*" onclick="box(this)">x</button></td>
+                <td><button id="cube" onclick="cube(this)">x<sup>3</sup></button></td>
+            </tr>
+            <tr>
+                <td><button id="clear" onclick="clear(this)">Clear</button></td>
+                <td><button id="0" onclick="box(this)">0</button></td>
+                <td><button id="equal" onclick="calculate(this)">=</button></td>
+                <td><button id="/" onclick="box(this)">/</button></td>
+                <td><button id="root" onclick="sqrt(this)">Sqrt</button></td>
+            </tr>
+        </table>
+        
+
+    </body>
+</html>
