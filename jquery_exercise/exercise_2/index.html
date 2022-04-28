@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Image_display_33337</title>
+		<style>
+			.button_container {
+				display :  inline; 
+				margin-left : auto;
+				margin-right : auto;			
+			}
+			button {
+				float : left;	
+				margin-left : 1%;
+				margin-right : 1%;		
+			}
+			img {
+				width : 350px;
+				height :350px;		
+				border: 2px solid black;	
+			}
+			.image_row {
+				width : 50%;
+				height : 50%			
+			}
+			.image_row {
+				display : inline-block;
+			}
+			.image_placeholder {
+				float: left;
+			}
+				
+		</style>
+		<script src="./jquery-3.6.0.min.js"></script>
+		<script src="./script.js"></script>
+	</head>
+	<body>
+		<div class="button_container">
+			<button type="button" id="show_all">Show All</button>
+			<button type="button" id="show_fruit">Show Fruit</button>
+			<button type="button" id="show_animal">Show Animal</button>
+			<button type="button" id="show_car">Show Car</button>
+			<button type="button" id="show_bike">Show Bike</button>
+		</div>
+		<br>
+		<br>
+		<div class="image_row">
+			<div class="image_placeholder_1 image_placeholder">
+				<img src="./animal.jpeg">
+			</div>
+			<div class="image_placeholder_2 image_placeholder">
+				<img src="./fruit.jpeg">
+			</div>
+		</div>
+		<div class="image_row">
+			<div class="image_placeholder_3 image_placeholder">
+				<img src="./car.jpeg">
+			</div>
+			<div class="image_placeholder_4 image_placeholder">
+				<img src="./bike.jpg">
+			</div>
+		</div>
+	</body>
+</html>
+
