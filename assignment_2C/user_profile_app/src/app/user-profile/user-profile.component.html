@@ -1,0 +1,16 @@
+<!--Header-->
+<div id="header">
+    <h1 id="header_content">My Profile</h1>
+</div>
+<div class="container container-fluid" id="profile_placeholder">
+    <div class="card">
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Username : {{user_name}}</li>
+            <li class="list-group-item">Age : {{age}}</li>
+            <li class="list-group-item">City : {{city}}</li>
+            <li class="list-group-item">State : {{state}}</li>
+            <li class="list-group-item">Contact Number : {{contact_number}}</li>
+        </ul>
+    </div>
+    <button type="button" class="btn-primary" id="log_out" (click)="log_out()">Log Out</button>
+</div>

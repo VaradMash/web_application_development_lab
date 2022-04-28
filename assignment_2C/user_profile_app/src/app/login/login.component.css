@@ -1,0 +1,30 @@
+.login_frame{
+    height: 94vh;
+    width: 100vw;
+    display: inline;
+}
+
+#image_placeholder {
+    width: 50%;
+    height: 100vh;
+    float: left;
+}
+
+#form_placeholder {
+    width: 50%;
+    height: 100vh;
+    float: left;
+}
+
+#header {
+    margin-top: 15%;
+    text-align: center;
+}
+
+#login_details {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding: 15px;
+    margin-top: 5%;
+}
