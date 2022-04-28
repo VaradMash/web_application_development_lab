@@ -1,0 +1,4 @@
+{
+    college_name : "PICT",
+    year_of_establishment : 1983
+}

@@ -1,0 +1,26 @@
+[
+    {
+        "college_name" : "PICT",
+        "year_of_establishment" : 1983
+    },
+    {
+        "college_name" : "COEP",
+        "year_of_establishment" : 1984
+    },
+    {
+        "college_name" : "IITB",
+        "year_of_establishment" : 1965
+    },
+    {
+        "college_name" : "IITKGP",
+        "year_of_establishment" : 1993
+    },
+    {
+        "college_name" : "IITKNP",
+        "year_of_establishment" : 1965
+    },
+    {
+        "college_name" : "IITGUW",
+        "year_of_establishment" : 1989
+    }
+]
