@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AJAX Post</title>  
+        <script src="./scripts/script.js">
+        </script>              
+        <style>
+            form {
+                width: 50%;
+                margin-left: auto;
+                margin-right: auto;
+                border: 1px solid black;
+                padding: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <h1>User data</h1>
+        </center>
+        <form>
+            <label for="username">Username</label>
+            <input type="text" value="" placeholder="Enter name" id="username" name="username">
+            <br>
+            <br>
+            <label for="email">Email</label>
+            <input type="email" value="" placeholder="Enter email" id="email" name="email">
+            <br>
+            <br>
+            <input type="button" onclick="submit_data()" value="Submit">
+            <br>
+            <br>
+            <a href="./user_list.html">View all users</a>
+        </form>
+    </body>
+</html>
