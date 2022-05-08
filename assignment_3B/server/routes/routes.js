@@ -3,13 +3,15 @@ const router = express.Router();
 const User = require("../models/user");
 
 // Retrieve data
-router.get("/login/:username", (req, res, next) => {
+router.post("/user", (req, res, next) => {
     // Code to authenticate user 
     console.log("Username : " + req.body.username);
-    User.findOne({"username": req.params.username}, function(err, result) {
-        if(err) console.log(err);
+    User.findOne({"username": req.body.username}, function(err, result) {
+        if(err) 
+        {
+            res.json({"message" : "not ok"});
+        }
         else{
-            console.log(result);
             res.json(result)
         }
     })    
@@ -45,17 +47,23 @@ router.post("/register", (req, res, next) => {
     })
 });
 
-router.delete("/delete/:username", (req, res, next) => {
+router.post("/delete", (req, res, next) => {
 
     // Code to delete user from application
-    User.deleteOne({username: req.params.username}, (err, result) => {
+    User.deleteOne({username: req.body.username}, (err, result) => {
         if(err)
         {
-            res.json({msg: "Failed to delete contact with username " + req.params.username});
+            res.json({
+                msg: "Failed to delete contact with username " + req.params.username,
+                code: 404 
+            });
         }
         else
         {
-            res.json({msg: "Contact deleted successfuly"});
+            res.json({
+                msg: "Contact deleted successfuly",
+                code: 200
+            });
         }
     });
 });

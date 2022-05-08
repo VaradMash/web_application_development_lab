@@ -7,7 +7,7 @@ const userSchema = mongoose.Schema({
     },
     age: {
         type: String,
-        requires : false
+        required : false
     },
     city:{
         type: String,

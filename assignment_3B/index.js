@@ -28,7 +28,9 @@ var app = express();
 const port = 3000;
 
 // Adding middleware
-app.use(cors());
+app.use(cors({
+    origin:"http://localhost:4200"
+}));
 app.use(bodyparser.json());
 
 // Static files
@@ -36,11 +38,6 @@ app.use(express.static(path.join(__dirname, "user_profile_app")));
 
 // Connecting the routes
 app.use("/api", routes);
-
-// testing
-app.get("/", (req, res) => {
-    res.send("Hello world");
-})
 
 app.listen(port, () => {
     console.log("Server Listening at port: " + port);
