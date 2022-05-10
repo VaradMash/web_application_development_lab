@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Student Data
+    </h1>
+    <br>
+    <form action="/add_student" method="GET">
+        <button type="submit">
+            Add a new student
+        </button>
+    </form>
+    <br>
+    <br>
+    <form action="/api/get_all_students" method="GET">
+        <button type="submit">See all students</button>
+    </form>
+    <br>
+    <br>
+    <form action="/api/filter_marks/25" method="GET">
+        <button type="submit">See all students with marks > 25 in all subjects</button>
+    </form>
+    <br>
+    <br>
+    <form action="/api/filter_marks/50" method="GET">
+        <button type="submit">See all students with marks > 50 in all subjects</button>
+    </form>
+    <br>
+    <br>
+    <form action="/api/filter_marks/75" method="GET">
+        <button type="submit">See all students with marks > 75 in all subjects</button>
+    </form>
+    <br>
+    <br>
+</body>
+</html>

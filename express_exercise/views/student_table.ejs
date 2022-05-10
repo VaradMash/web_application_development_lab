@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student data</title>
+</head>
+<body>
+    <h1><%= title %></h1>
+    <table border="2">
+        <tr>
+            <th>Name</th>
+            <th>Roll Number</th>
+            <th>WAD Marks</th>
+            <th>CC Marks</th>
+            <th>AI Marks</th>
+            <th>CNS Marks</th>
+            <th>DSBDA Marks</th>
+        </tr>
+        <% data.forEach(element => { %>
+        <tr>
+            <td><%= element.name %></td>
+            <td><%= element.roll_number %></td>
+            <td><%= element.wad_marks %></td>
+            <td><%= element.cc_marks %></td>
+            <td><%= element.AI_marks %></td>
+            <td><%= element.cns_marks %></td>
+            <td><%= element.dsbda_marks %></td>
+        </tr>
+        <% });%>
+    </table>
+</body>
+</html>
